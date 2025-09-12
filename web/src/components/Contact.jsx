@@ -1,15 +1,16 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { contactInfo, socialMedia } from '../assets/assets';
 
 const Contact = () => {
   const getSocialIcon = (iconName) => {
     const iconProps = { size: 20 };
     switch(iconName) {
-      case 'Facebook': return <Facebook {...iconProps} />;
-      case 'Instagram': return <Instagram {...iconProps} />;
-      case 'Twitter': return <Twitter {...iconProps} />;
-      case 'Youtube': return <Youtube {...iconProps} />;
+      case 'Facebook': return <FaFacebook {...iconProps} />;
+      case 'Instagram': return <FaInstagram {...iconProps} />;
+      case 'Twitter': return <FaTwitter {...iconProps} />;
+      case 'Youtube': return <FaYoutube {...iconProps} />;
       default: return null;
     }
   };
@@ -65,7 +66,7 @@ const Contact = () => {
                 {socialMedia.map((social, index) => (
                   <div 
                     key={index}
-                    className={`bg-${social.color} hover:bg-${social.hoverColor} text-white p-3 rounded-full cursor-pointer transition-colors`}
+                    className={`bg-${social.color} hover:bg-${social.hoverColor} text-black p-3 rounded-full cursor-pointer transition-colors`}
                   >
                     {getSocialIcon(social.icon)}
                   </div>
@@ -85,7 +86,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border-2 border-gray-500 rounded-lg "
                     placeholder="Your first name"
                   />
                 </div>
@@ -95,7 +96,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border-gray-500 rounded-lg border-2 "
                     placeholder="Your last name"
                   />
                 </div>
@@ -106,7 +107,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border-gray-500 border-2 rounded-lg  "
                   placeholder="your@email.com"
                 />
               </div>
@@ -116,13 +117,13 @@ const Contact = () => {
                 </label>
                 <textarea
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border-2 border-gray-500 rounded-lg"
                   placeholder="Tell us about your travel plans..."
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-gradient-to-r from-green-300 to-green-600 text-white py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105"
               >
                 Send Message
               </button>

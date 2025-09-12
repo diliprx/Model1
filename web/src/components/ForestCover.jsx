@@ -2,67 +2,131 @@ import React from 'react';
 import { Trees, Leaf, Mountain, Bird } from 'lucide-react';
 
 const ForestCover = () => {
-  const forestTypes = [
-    {
-      name: "Tropical Evergreen Forests",
-      coverage: "45%",
-      altitude: "Below 1,000m",
-      characteristics: "Dense canopy, high biodiversity, year-round green",
-      species: ["Dipterocarpus", "Mesua", "Michelia"],
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Subtropical Forests",
-      coverage: "30%",
-      altitude: "1,000-2,000m",
-      characteristics: "Mixed deciduous and evergreen, moderate rainfall",
-      species: ["Oak", "Magnolia", "Rhododendron"],
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Temperate Forests",
-      coverage: "15%",
-      altitude: "2,000-3,000m",
-      characteristics: "Coniferous trees, cooler climate, seasonal changes",
-      species: ["Pine", "Fir", "Spruce"],
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Alpine Forests",
-      coverage: "10%",
-      altitude: "Above 3,000m",
-      characteristics: "Stunted growth, hardy species, extreme weather",
-      species: ["Juniper", "Birch", "Alpine shrubs"],
-      image: "/api/placeholder/300/200"
-    }
-  ];
+  // const forestTypes = [
+  //   {
+  //     name: "Tropical Evergreen Forests",
+  //     coverage: "45%",
+  //     altitude: "Below 1,000m",
+  //     characteristics: "Dense canopy, high biodiversity, year-round green",
+  //     species: ["Dipterocarpus", "Mesua", "Michelia"],
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Subtropical Forests",
+  //     coverage: "30%",
+  //     altitude: "1,000-2,000m",
+  //     characteristics: "Mixed deciduous and evergreen, moderate rainfall",
+  //     species: ["Oak", "Magnolia", "Rhododendron"],
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Temperate Forests",
+  //     coverage: "15%",
+  //     altitude: "2,000-3,000m",
+  //     characteristics: "Coniferous trees, cooler climate, seasonal changes",
+  //     species: ["Pine", "Fir", "Spruce"],
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Alpine Forests",
+  //     coverage: "10%",
+  //     altitude: "Above 3,000m",
+  //     characteristics: "Stunted growth, hardy species, extreme weather",
+  //     species: ["Juniper", "Birch", "Alpine shrubs"],
+  //     image: "/api/placeholder/300/200"
+  //   }
+  // ];
 
+  const forestTypes = [
+  {
+    name: "Tropical Dry Deciduous Forests",
+    coverage: "62%",
+    altitude: "200-800m",
+    characteristics: "Dominant forest type, shed leaves in summer to conserve water",
+    species: ["Sal (Shorea robusta)", "Teak", "Bamboo"],
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Moist Deciduous Forests",
+    coverage: "25%",
+    altitude: "300-900m",
+    characteristics: "Denser canopy with higher rainfall regions, remain green longer",
+    species: ["Sal", "Asan", "Kusum", "Mahua"],
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Mixed Forests with Bamboo Groves",
+    coverage: "8%",
+    altitude: "200-700m",
+    characteristics: "Combination of hardwood trees with extensive bamboo clusters",
+    species: ["Bamboo", "Palash", "Sal", "Piar"],
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Riparian & Grassland Forests",
+    coverage: "5%",
+    altitude: "Along rivers and valleys",
+    characteristics: "Forests along riverbanks with grassland patches supporting wildlife",
+    species: ["Jamun", "Tamarind", "Grasses", "Shrubs"],
+    image: "/api/placeholder/300/200"
+  }
+];
+
+
+  // const wildlifeData = [
+  //   {
+  //     name: "Hoolock Gibbon",
+  //     status: "Endangered",
+  //     habitat: "Canopy of tropical forests",
+  //     icon: "🐒"
+  //   },
+  //   {
+  //     name: "Asian Elephant",
+  //     status: "Vulnerable", 
+  //     habitat: "Forest corridors and grasslands",
+  //     icon: "🐘"
+  //   },
+  //   {
+  //     name: "Clouded Leopard",
+  //     status: "Vulnerable",
+  //     habitat: "Dense tropical forests",
+  //     icon: "🐆"
+  //   },
+  //   {
+  //     name: "Great Hornbill",
+  //     status: "Near Threatened",
+  //     habitat: "Tall trees in dense forests",
+  //     icon: "🦅"
+  //   }
+  // ];
+  
   const wildlifeData = [
-    {
-      name: "Hoolock Gibbon",
-      status: "Endangered",
-      habitat: "Canopy of tropical forests",
-      icon: "🐒"
-    },
-    {
-      name: "Asian Elephant",
-      status: "Vulnerable", 
-      habitat: "Forest corridors and grasslands",
-      icon: "🐘"
-    },
-    {
-      name: "Clouded Leopard",
-      status: "Vulnerable",
-      habitat: "Dense tropical forests",
-      icon: "🐆"
-    },
-    {
-      name: "Great Hornbill",
-      status: "Near Threatened",
-      habitat: "Tall trees in dense forests",
-      icon: "🦅"
-    }
-  ];
+  {
+    name: "Asian Elephant",
+    status: "Vulnerable",
+    habitat: "Forests and grasslands of Dalma & Saranda",
+    icon: "🐘"
+  },
+  {
+    name: "Sloth Bear",
+    status: "Vulnerable",
+    habitat: "Dry deciduous forests and rocky areas",
+    icon: "🐻"
+  },
+  {
+    name: "Indian Pangolin",
+    status: "Endangered",
+    habitat: "Forests and scrublands",
+    icon: "🦔"
+  },
+  {
+    name: "Chital (Spotted Deer)",
+    status: "Least Concern",
+    habitat: "Open forests and grasslands",
+    icon: "🦌"
+  }
+];
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -77,10 +141,10 @@ const ForestCover = () => {
             ← Back to Home
           </button> */}
           <div className="text-center">
-            <h1 className="text-5xl pt-[140px] font-bold mb-4">29% Forest Cover</h1>
+            <h1 className="text-5xl pt-[140px] font-bold mb-4">29.81% Forest Cover</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Nagaland boasts one of the highest forest covers in India, preserving biodiversity 
-              and supporting indigenous communities through sustainable forest management.
+             Jharkhand has a rich forest cover of nearly 30% of its area, playing a vital role in maintaining biodiversity, 
+             supporting tribal communities, and sustaining its ecological balance.
             </p>
           </div>
         </div>
