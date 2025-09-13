@@ -44,7 +44,7 @@ const ForestCover = () => {
     altitude: "200-800m",
     characteristics: "Dominant forest type, shed leaves in summer to conserve water",
     species: ["Sal (Shorea robusta)", "Teak", "Bamboo"],
-    image: "/api/placeholder/300/200"
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/The_Gir_forest.jpg/1100px-The_Gir_forest.jpg"
   },
   {
     name: "Moist Deciduous Forests",
@@ -52,7 +52,7 @@ const ForestCover = () => {
     altitude: "300-900m",
     characteristics: "Denser canopy with higher rainfall regions, remain green longer",
     species: ["Sal", "Asan", "Kusum", "Mahua"],
-    image: "/api/placeholder/300/200"
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cauvery_Wildlife_Sanctuary_9.JPG"
   },
   {
     name: "Mixed Forests with Bamboo Groves",

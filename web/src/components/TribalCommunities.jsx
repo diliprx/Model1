@@ -2,62 +2,120 @@ import React from 'react';
 import { Users, Home, Music, Palette } from 'lucide-react';
 
 const TribalCommunities = () => {
+  // const majorTribes = [
+  //   {
+  //     name: "Angami",
+  //     population: "12%",
+  //     districts: ["Kohima", "Dimapur"],
+  //     festivals: ["Sekrenyi"],
+  //     specialties: ["Terraced cultivation", "Handicrafts"],
+  //     description: "Known for their agricultural expertise and the famous Hornbill Festival.",
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Ao",
+  //     population: "11%", 
+  //     districts: ["Mokokchung"],
+  //     festivals: ["Moatsu"],
+  //     specialties: ["Education", "Literature"],
+  //     description: "First tribe to embrace modern education and Christianity in Nagaland.",
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Konyak",
+  //     population: "10%",
+  //     districts: ["Mon"],
+  //     festivals: ["Aoleang"],
+  //     specialties: ["Traditional tattoos", "Woodcarving"],
+  //     description: "Known for their rich traditions and skilled craftsmanship.",
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Lotha",
+  //     population: "8%",
+  //     districts: ["Wokha"],
+  //     festivals: ["Tokhu Emong"],
+  //     specialties: ["Weaving", "Folk songs"],
+  //     description: "Famous for their colorful shawls and vibrant cultural expressions.",
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Sema",
+  //     population: "8%",
+  //     districts: ["Zunheboto"],
+  //     festivals: ["Tuluni"],
+  //     specialties: ["Traditional medicine", "Pottery"],
+  //     description: "Known for their knowledge of herbal medicine and pottery skills.",
+  //     image: "/api/placeholder/300/200"
+  //   },
+  //   {
+  //     name: "Chang",
+  //     population: "7%",
+  //     districts: ["Tuensang"],
+  //     festivals: ["Naknyulem"],
+  //     specialties: ["Traditional brewing", "Basketry"],
+  //     description: "Skilled in traditional brewing and intricate basket weaving.",
+  //     image: "/api/placeholder/300/200"
+  //   }
+  // ];
+
   const majorTribes = [
-    {
-      name: "Angami",
-      population: "12%",
-      districts: ["Kohima", "Dimapur"],
-      festivals: ["Sekrenyi"],
-      specialties: ["Terraced cultivation", "Handicrafts"],
-      description: "Known for their agricultural expertise and the famous Hornbill Festival.",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Ao",
-      population: "11%", 
-      districts: ["Mokokchung"],
-      festivals: ["Moatsu"],
-      specialties: ["Education", "Literature"],
-      description: "First tribe to embrace modern education and Christianity in Nagaland.",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Konyak",
-      population: "10%",
-      districts: ["Mon"],
-      festivals: ["Aoleang"],
-      specialties: ["Traditional tattoos", "Woodcarving"],
-      description: "Known for their rich traditions and skilled craftsmanship.",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Lotha",
-      population: "8%",
-      districts: ["Wokha"],
-      festivals: ["Tokhu Emong"],
-      specialties: ["Weaving", "Folk songs"],
-      description: "Famous for their colorful shawls and vibrant cultural expressions.",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Sema",
-      population: "8%",
-      districts: ["Zunheboto"],
-      festivals: ["Tuluni"],
-      specialties: ["Traditional medicine", "Pottery"],
-      description: "Known for their knowledge of herbal medicine and pottery skills.",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      name: "Chang",
-      population: "7%",
-      districts: ["Tuensang"],
-      festivals: ["Naknyulem"],
-      specialties: ["Traditional brewing", "Basketry"],
-      description: "Skilled in traditional brewing and intricate basket weaving.",
-      image: "/api/placeholder/300/200"
-    }
-  ];
+  {
+    name: "Santhal",
+    population: "34%",
+    districts: ["Dumka", "Godda", "Pakur", "Jamtara"],
+    festivals: ["Sohrai", "Baha"],
+    specialties: ["Santhali music", "Tribal dance"],
+    description: "The largest tribal community in Jharkhand, known for their rich folklore, music, and dances.",
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Munda",
+    population: "8%",
+    districts: ["Ranchi", "Khunti", "Simdega"],
+    festivals: ["Mage Parab", "Sarhul"],
+    specialties: ["Agriculture", "Traditional governance (Munda-Manki system)"],
+    description: "Known for their agrarian lifestyle and strong community governance traditions.",
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Oraon (Kurukh)",
+    population: "8%",
+    districts: ["Latehar", "Lohardaga", "Ranchi"],
+    festivals: ["Sarhul", "Karma"],
+    specialties: ["Oraon folk songs", "Handicrafts"],
+    description: "Renowned for their folk dances, music, and vibrant celebrations of nature.",
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Ho",
+    population: "10%",
+    districts: ["West Singhbhum", "East Singhbhum"],
+    festivals: ["Mage Parab", "Baa Parab"],
+    specialties: ["Ho language", "Dance and songs"],
+    description: "The Ho tribe has its own language and vibrant traditions of dance and song.",
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Kharia",
+    population: "4%",
+    districts: ["Simdega", "Gumla"],
+    festivals: ["Jani Shikar", "Karam"],
+    specialties: ["Hunting traditions", "Weaving"],
+    description: "Known for their unique hunting festivals and traditional weaving skills.",
+    image: "/api/placeholder/300/200"
+  },
+  {
+    name: "Birhor",
+    population: "Minority (PVTG)",
+    districts: ["Hazaribagh", "Giridih", "Chatra"],
+    festivals: ["Sohrai"],
+    specialties: ["Nomadic lifestyle", "Rope and net making"],
+    description: "A Particularly Vulnerable Tribal Group (PVTG) known for their forest-based, nomadic culture.",
+    image: "/api/placeholder/300/200"
+  }
+];
+
 
   const culturalElements = [
     {
@@ -97,8 +155,7 @@ const TribalCommunities = () => {
           <div className="text-center">
             <h1 className="text-5xl pt-[120px] font-bold mb-4">32 Tribal Communities</h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Nagaland is home to diverse tribal communities, each with unique traditions, 
-              languages, and cultural practices that form the rich tapestry of Naga heritage.
+              Jharkhand is home to diverse tribal communities, including Santhal, Munda, Oraon, Ho, Kharia, and others, each with distinct traditions, festivals, and languages that together shape the vibrant cultural heritage of the state.
             </p>
           </div>
         </div>
